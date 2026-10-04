@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'Birthday— A Celebration of You</title>
+<!-- Fonts & Google Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;family=Dancing+Script:wght@400;600;700&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary": "#ffffff",
+            "outline": "#7f7663",
+            "on-primary-fixed": "#241a00",
+            "surface-tint": "#735c00",
+            "surface-container-low": "#f7f3ed",
+            "on-background": "#1c1c18",
+            "on-secondary-fixed": "#380a1a",
+            "on-tertiary-fixed-variant": "#494455",
+            "on-error": "#ffffff",
+            "primary-fixed": "#ffe088",
+            "primary-fixed-dim": "#e9c349",
+            "secondary-container": "#ffb1c3",
+            "on-surface-variant": "#4d4635",
+            "on-tertiary-fixed": "#1e1929",
+            "primary": "#735c00",
+            "secondary": "#894c5c",
+            "surface-container-high": "#ebe8e2",
+            "on-primary-container": "#554300",
+            "on-secondary-fixed-variant": "#6e3545",
+            "surface-container-lowest": "#ffffff",
+            "on-surface": "#1c1c18",
+            "surface": "#fdf9f3",
+            "on-primary": "#ffffff",
+            "surface-container-highest": "#e6e2dc",
+            "error": "#ba1a1a",
+            "surface-variant": "#e6e2dc",
+            "tertiary": "#615b6e",
+            "surface-dim": "#dddad4",
+            "on-error-container": "#93000a",
+            "inverse-on-surface": "#f4f0ea",
+            "tertiary-fixed-dim": "#cbc3d8",
+            "tertiary-fixed": "#e8dff5",
+            "secondary-fixed-dim": "#ffb1c3",
+            "inverse-surface": "#31302d",
+            "on-primary-fixed-variant": "#574500",
+            "surface-bright": "#fdf9f3",
+            "outline-variant": "#d0c5af",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#e9c349",
+            "tertiary-container": "#b7afc4",
+            "on-secondary-container": "#7b4050",
+            "on-tertiary-container": "#474253",
+            "surface-container": "#f1ede7",
+            "secondary-fixed": "#ffd9e0",
+            "on-secondary": "#ffffff",
+            "background": "#fdf9f3",
+            "primary-container": "#d4af37"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-lg": "1.5rem",
+            "margin": "3rem",
+            "space-md": "1rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "label-md": ["Newsreader", "serif"],
+            "body-lg": ["Newsreader", "serif"],
+            "headline-sm": ["EB Garamond", "serif"],
+            "headline-md": ["EB Garamond", "serif"],
+            "display-lg-mobile": ["EB Garamond", "serif"],
+            "headline-lg": ["EB Garamond", "serif"],
+            "body-sm": ["Newsreader", "serif"],
+            "display-lg": ["EB Garamond", "serif"],
+            "body-md": ["Newsreader", "serif"],
+            "label-sm": ["Newsreader", "serif"],
+            "headline-lg-mobile": ["EB Garamond", "serif"],
+            "handwriting": ["Caveat", "Dancing Script", "cursive"]
+          },
+          "fontSize": {
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "display-lg-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      scroll-margin-top: 96px;
+    }
+
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+    }
+
+    @keyframes floatParticle {
+      0% {
+        transform: translateY(105vh) rotate(0deg) scale(0.8);
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.7;
+      }
+      80% {
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(360deg) scale(1.1);
+        opacity: 0;
+      }
+    }
+
+    .particle {
+      position: absolute;
+      pointer-events: none;
+      animation: floatParticle linear infinite;
+    }
+
+    .deckled-edge {
+      box-shadow: 
+        0 1px 0 0 rgba(212, 175, 55, 0.25),
+        0 24px 48px -8px rgba(45, 27, 34, 0.12),
+        0 4px 20px -2px rgba(74, 46, 53, 0.06);
+      background-image: radial-gradient(#d0c5af 0.45px, transparent 0.45px);
+      background-size: 24px 24px;
+    }
+
+    .tape-strip {
+      background: rgba(253, 249, 243, 0.75);
+      backdrop-filter: blur(4px);
+      border-left: 1px dashed rgba(208, 197, 175, 0.6);
+      border-right: 1px dashed rgba(208, 197, 175, 0.6);
+      box-shadow: 0 1px 3px rgba(74, 46, 53, 0.05);
+    }
+
+    .polaroid-shadow {
+      box-shadow: 0 12px 32px -4px rgba(74, 46, 53, 0.08), 0 2px 6px -1px rgba(212, 175, 55, 0.1);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .polaroid-shadow:hover {
+      transform: translateY(-6px) rotate(0deg) scale(1.02);
+      box-shadow: 0 20px 40px -6px rgba(74, 46, 53, 0.14), 0 0 16px 2px rgba(238, 220, 130, 0.35);
+    }
+
+    @keyframes navFloat {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    #smart-nav-pill {
+      animation: navFloat 2.4s ease-in-out infinite;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    #smart-nav-pill:hover {
+      transform: translateY(-2px) scale(1.02);
+    }
+
+    #smart-nav-icon {
+      transition: transform 0.3s ease;
+    }
+
+    #smart-nav-pill:hover #smart-nav-icon {
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased overflow-x-hidden selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+<main>
+<!-- SECTION 1: HERO EXPERIENCE -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 pb-16 px-6 overflow-hidden bg-gradient-to-b from-surface via-surface-container-low to-surface-bright" id="section-hero">
+<!-- Soft Light Vignettes & Ambience -->
+<div class="absolute inset-0 pointer-events-none">
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[34rem] h-[34rem] bg-secondary-fixed/30 rounded-full blur-3xl opacity-70"></div>
+<div class="absolute bottom-1/3 right-1/4 w-[28rem] h-[28rem] bg-primary-fixed-dim/20 rounded-full blur-3xl opacity-60"></div>
+<div class="absolute top-1/3 left-1/4 w-80 h-80 bg-tertiary-fixed/35 rounded-full blur-2xl opacity-50"></div>
+</div>
+<!-- Floating Canvas Particles -->
+<div class="absolute inset-0 overflow-hidden pointer-events-none z-0" id="hero-particles"></div>
+<!-- Center Hero Typography and Actions -->
+<div class="relative z-10 max-w-3xl mx-auto text-center flex flex-col items-center">
+<!-- Delicate Pre-title Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-lowest/80 border border-outline-variant/40 shadow-sm mb-6 backdrop-blur-md">
+<span class="text-primary text-xs">✨</span>
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">A little celebration for someone extraordinary</span>
+<span class="text-primary text-xs">✨</span>
+</div>
+<!-- Main Grand Headline -->
+<h1 class="font-headline-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface tracking-tight leading-tight mb-4">
+          Happy Birthday <span class="text-secondary inline-block animate-pulse">❤️</span>
+</h1>
+<!-- Gilt Shimmer Flourish Line -->
+<div class="flex items-center justify-center gap-3 w-48 mb-6">
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-primary-container to-transparent"></div>
+</div>
+<!-- Tender Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-10 leading-relaxed italic">
+          "Today is all about celebrating you... the laughter you bring, the light you share, and the world made brighter simply because you are here."
+        </p>
+<!-- Downward Guidance Pill -->
+<a aria-label="Explore collection" class="inline-flex flex-col items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group" href="#section-gallery">
+<span class="font-label-sm text-label-sm tracking-widest uppercase opacity-75">Unfold Your Journey</span>
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 border border-outline-variant/30 flex items-center justify-center shadow-sm group-hover:translate-y-1 transition-transform animate-bounce">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="south">south</span>
+</div>
+</a>
+</div>
+</section>
+<!-- SECTION 2: SCRAPBOOK GALLERY ("A Little Collection of You ❤️") -->
+<section class="relative py-28 px-6 max-w-6xl mx-auto" id="section-gallery">
+<!-- Section Intro Header -->
+<div class="text-center max-w-2xl mx-auto mb-20">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">
+          A Little Collection of You <span class="text-secondary font-normal">❤️</span>
+</h2>
+<div class="w-16 h-0.5 bg-primary-container mx-auto mb-4"></div>
+</div>
+<!-- Asymmetrical Scrapbook Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Polaroid Item 1: Laugh & Sunshine (-2.5deg tilt) -->
+<div class="md:col-span-4 relative group">
+<div class="tape-strip w-28 h-6 absolute -top-3 left-1/2 -translate-x-1/2 z-20 -rotate-3"></div>
+<div class="bg-surface-container-lowest p-4 pb-6 rounded-lg polaroid-shadow transform md:-rotate-2 border border-outline-variant/20">
+<div class="overflow-hidden rounded aspect-[4/5] bg-surface-container mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A candid portrait of a beautiful radiant young woman laughing genuinely outdoors under golden warm sunlight, surrounded by warm amber foliage, dressed in natural linen, shot in soft 35mm film photography style with champagne and ivory tones." src="./image/WhatsApp Image 2026-10-04 at 5.35.54 PM (1).jpeg"/>
+</div>
+</div>
+</div>
+<!-- Polaroid Item 2: Quiet Wanderlust (2deg tilt) -->
+<div class="md:col-span-4 relative group md:mt-10">
+<div class="tape-strip w-24 h-6 absolute -top-3 left-1/2 -translate-x-1/2 z-20 rotate-2"></div>
+<div class="bg-surface-container-lowest p-4 pb-6 rounded-lg polaroid-shadow transform md:rotate-2 border border-outline-variant/20">
+<div class="overflow-hidden rounded aspect-[4/5] bg-surface-container mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A gentle solo travel photograph of a young woman overlooking coastal cliffs and tranquil ocean waves during late afternoon twilight, wind blowing gently through her hair, soft romantic champagne warmth and muted film tones." src="./image/WhatsApp Image 2026-10-04 at 5.35.54 PM_love.jpeg"/>
+</div>
+</div>
+</div>
+<!-- Callout Card 1: Warm Quote Card -->
+<div class="md:col-span-4 self-center">
+<div class="p-8 rounded-xl bg-surface-container-low/70 border border-outline-variant/40 relative overflow-hidden backdrop-blur-sm">
+<span class="font-headline-lg text-primary-fixed-dim/40 text-5xl absolute top-3 left-4 select-none">“</span>
+<p class="font-body-lg text-body-lg text-on-surface relative z-10 italic leading-relaxed pt-2">
+              Some people simply make ordinary moments feel like quiet poetry. You carry that magic without even trying.
+            </p>
+<div class="mt-6 flex items-center justify-between border-t border-outline-variant/30 pt-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">A True Note</span>
+<span class="text-primary text-sm">✦</span>
+</div>
+</div>
+<!-- Secondary Micro Quote Tile -->
+<div class="mt-6 p-5 rounded-lg bg-secondary-fixed/20 border border-secondary-container/50">
+<p class="font-headline-sm text-headline-sm text-on-secondary-fixed-variant italic text-center">
+              "A quiet reminder of how wonderfully unique you are."
+            </p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- SECTION 3: THE BIRTHDAY LETTER (id="section-letter") -->
+<section class="relative py-28 px-6 bg-gradient-to-b from-surface via-surface-container-low to-surface-container" id="section-letter">
+<div class="max-w-3xl mx-auto">
+<!-- Section Climax Prelude -->
+<!-- The Parchment Letter Container -->
+<div class="relative bg-[#FFFDF8] deckled-edge rounded-lg p-8 sm:p-14 border border-primary-container/30">
+<!-- Vintage Dried Floral Accent Decor (Top Left) -->
+<div class="absolute -top-4 -left-4 pointer-events-none select-none opacity-80">
+<div class="w-12 h-12 rounded-full bg-primary-fixed-dim/20 flex items-center justify-center text-primary text-xl">
+              🌿
+            </div>
+</div>
+<!-- Embossed Luxury Wax Seal Stamp (Top Right) -->
+<div class="absolute top-6 right-6 sm:top-8 sm:right-8 flex flex-col items-center">
+<div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-secondary to-on-secondary-fixed flex items-center justify-center shadow-lg border-2 border-primary-container/60 transform rotate-12 cursor-pointer hover:scale-105 transition-transform">
+<span class="font-headline-sm text-headline-sm text-primary-fixed italic font-bold">
+  <span class="text-secondary inline-block animate-pulse">❤️</span>
+</span>
+</div>
+</div>
+<!-- Letterhead Gilded Watermark Motif -->
+<div class="flex items-center justify-center gap-4 mb-10 pt-2">
+<div class="h-px w-16 bg-primary-container/40"></div>
+<span class="text-primary text-sm font-serif">✦ ✦ ✦</span>
+<div class="h-px w-16 bg-primary-container/40"></div>
+</div>
+<!-- Handcrafted Letter Content -->
+<div class="space-y-6 text-on-surface font-handwriting text-2xl sm:text-3xl leading-relaxed sm:leading-loose">
+<p class="text-3xl sm:text-4xl font-semibold text-secondary">
+              My dearest,
+            </p>
+<p>
+There is a kind of magic in the way you make the world feel brighter.            </p>
+<p>
+You make the whole world feel softer, kinder, and impossibly more beautiful. I hope this year gives back even a little of the magic you bring to everyone around you.
+            </p>
+<p>
+              May this upcoming year bring you wild laughter, peaceful mornings, dreams that unfold effortlessly, and all the deep happiness you so freely give to others. Never forget how truly special, cherished, and admired you are.
+            </p>
+<p class="text-3xl sm:text-4xl text-secondary pt-2">
+              Happy Birthday, Vaydiii ❤️
+            </p>
+<div class="pt-6 border-t border-outline-variant/30 flex flex-col items-start">
+<p class="text-2xl text-on-surface-variant font-medium">With all my fondest wishes,</p>
+<p class="text-4xl text-primary font-bold mt-1">— Hari</p>
+</div>
+</div>
+<!-- Bottom Parchment Watermark Detail -->
+<div class="mt-12 text-center">
+<span class="font-label-sm text-label-sm text-outline/60 tracking-widest uppercase">An Archival Birthday Keepsake</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- GLOBAL FLOATING SMART NAVIGATION (Dynamic Scroll Controller) -->
+<aside class="fixed bottom-6 right-6 z-50">
+<button aria-label="Smart Chapter Navigator" class="group flex items-center gap-2.5 px-5 py-3 rounded-full bg-surface/85 dark:bg-surface-container-high/90 backdrop-blur-md border border-primary-container/50 shadow-xl hover:shadow-2xl transition-all duration-300 active:scale-95 text-on-surface" id="smart-nav-pill">
+<span class="material-symbols-outlined text-primary group-hover:translate-y-0.5 transition-transform" data-icon="arrow_downward" id="smart-nav-icon">arrow_downward</span>
+<span class="font-label-md text-label-md tracking-wider font-semibold text-primary" id="smart-nav-text">Next chapter</span>
+</button>
+</aside>
+<!-- FOOTER (Shared Components JSON Anchor) -->
+<footer class="relative w-full bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline-variant/10">
+<div class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<!-- Footer Brand & Milestone Message -->
+<div class="text-center md:text-left">
+<!-- Gentle Copyright Stamp -->
+<div class="text-center md:text-right text-label-sm font-label-sm text-outline">
+<span>© <span id="current-year"></span> All moments cherished.</span>
+</div>
+</div>
+</footer>
+<!-- Interactive Logic & Micro-effects -->
+<script>
+    // Set Year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // 1. Floating Gentle Particles Engine (Hearts, Stars, Petals, Bokeh)
+    (function initFloatingParticles() {
+      const container = document.getElementById('hero-particles');
+      if (!container) return;
+
+      const symbols = ['🌸', '✨', '💛', '✦', ' hetu ', '🌸', '💫', ' dobi '];
+      const count = 18;
+
+      for (let i = 0; i < count; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle select-none';
+        
+        const isText = Math.random() > 0.4;
+        if (isText) {
+          particle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+          particle.style.fontSize = `${Math.floor(Math.random() * 12 + 10)}px`;
+          particle.style.color = '#735c00';
+          particle.style.opacity = '0.5';
+        } else {
+          // Golden / Rose Bokeh Orb
+          const size = Math.floor(Math.random() * 20 + 8);
+          particle.style.width = `${size}px`;
+          particle.style.height = `${size}px`;
+          particle.style.borderRadius = '50%';
+          particle.style.backgroundColor = Math.random() > 0.5 ? '#ffb1c3' : '#e9c349';
+          particle.style.filter = 'blur(2px)';
+          particle.style.opacity = '0.35';
+        }
+
+        particle.style.left = `${Math.random() * 100}%`;
+        const duration = Math.random() * 10 + 12;
+        const delay = Math.random() * 8;
+        particle.style.animationDuration = `${duration}s`;
+        particle.style.animationDelay = `${delay}s`;
+
+        container.appendChild(particle);
+      }
+    })();
+
+    // 2. SMART FLOATING NAVIGATION SCROLL LOGIC
+    (function initSmartNavigation() {
+      const smartPill = document.getElementById('smart-nav-pill');
+      const smartIcon = document.getElementById('smart-nav-icon');
+      const smartText = document.getElementById('smart-nav-text');
+
+      const heroSection = document.getElementById('section-hero');
+      const gallerySection = document.getElementById('section-gallery');
+      const letterSection = document.getElementById('section-letter');
+      const sections = [heroSection, gallerySection, letterSection].filter(Boolean);
+
+      if (!smartPill || !smartIcon || !smartText || sections.length === 0) return;
+
+      function getCurrentSectionIndex() {
+        const triggerPoint = window.innerHeight * 0.38;
+        let currentIndex = 0;
+
+        for (let i = 0; i < sections.length; i++) {
+          const rect = sections[i].getBoundingClientRect();
+          if (rect.top <= triggerPoint) {
+            currentIndex = i;
+          }
+        }
+
+        return currentIndex;
+      }
+
+      function updateNavState() {
+        const currentIndex = getCurrentSectionIndex();
+        const isAtLastSection = currentIndex === sections.length - 1;
+
+        smartIcon.textContent = isAtLastSection ? 'arrow_upward' : 'arrow_downward';
+        smartText.textContent = isAtLastSection ? 'Back to top' : 'Next chapter';
+      }
+
+      window.addEventListener('scroll', updateNavState, { passive: true });
+      updateNavState();
+
+      smartPill.addEventListener('click', () => {
+        const currentIndex = getCurrentSectionIndex();
+        const isAtLastSection = currentIndex === sections.length - 1;
+
+        if (isAtLastSection) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          return;
+        }
+
+        const nextIndex = Math.min(currentIndex + 1, sections.length - 1);
+        sections[nextIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    })();
+
+    // 3. Audio Ambient State Simulation
+    (function initAudioInteractions() {
+      let isPlaying = false;
+      const topBtn = document.getElementById('audio-toggle-top');
+      const heroPill = document.getElementById('hero-audio-pill');
+      const heroLabel = document.getElementById('hero-music-label');
+
+      function togglePlay() {
+        isPlaying = !isPlaying;
+        if (isPlaying) {
+          heroLabel.textContent = '🎶 Melody Playing (Soft Ambience)';
+          topBtn.classList.add('text-primary', 'bg-primary-fixed/30');
+          heroPill.classList.add('border-primary', 'bg-primary-fixed/20');
+        } else {
+          heroLabel.textContent = '✨ Play Birthday Melody';
+          topBtn.classList.remove('text-primary', 'bg-primary-fixed/30');
+          heroPill.classList.remove('border-primary', 'bg-primary-fixed/20');
+        }
+      }
+
+      if (topBtn) topBtn.addEventListener('click', togglePlay);
+      if (heroPill) heroPill.addEventListener('click', togglePlay);
+    })();
+
+    // 4. Keepsake Actions (Save Keepsake & Send Love Feedback)
+    (function initKeepsakeActions() {
+      const saveBtn = document.getElementById('save-keepsake-btn');
+      const sendLoveBtn = document.getElementById('send-love-btn');
+      const likeToast = document.getElementById('like-toast-btn');
+
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          const original = saveBtn.innerHTML;
+          saveBtn.innerHTML = `
+            <span class="material-symbols-outlined text-lg" data-icon="check" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check</span>
+            <span>Saved to Memories! 💌</span>
+          `;
+          saveBtn.classList.add('bg-primary', 'text-on-primary');
+          setTimeout(() => {
+            saveBtn.innerHTML = original;
+            saveBtn.classList.remove('bg-primary', 'text-on-primary');
+          }, 3200);
+        });
+      }
+
+      function triggerHeartSparks() {
+        const toast = document.createElement('div');
+        toast.className = 'fixed top-20 right-6 z-50 px-4 py-2 rounded-full bg-secondary text-on-secondary shadow-lg font-label-md text-label-md flex items-center gap-2 transform transition-all duration-300 translate-y-0 opacity-100';
+        toast.innerHTML = `<span>Heartfelt Birthday Warmth Sent</span> ❤️`;
+        document.body.appendChild(toast);
+        setTimeout(() => {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateY(-10px)';
+          setTimeout(() => toast.remove(), 400);
+        }, 2500);
+      }
+
+      if (sendLoveBtn) sendLoveBtn.addEventListener('click', triggerHeartSparks);
+      if (likeToast) likeToast.addEventListener('click', triggerHeartSparks);
+    })();
+  </script>
+</body></html>
